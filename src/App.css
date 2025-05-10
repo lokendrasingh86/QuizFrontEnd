@@ -1,0 +1,86 @@
+.main-frame{
+  background-color: #50bcbc;
+  height: 50vh;
+  width: 1010px;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.logo{
+  height: 50px;
+  width: 120px;
+}
+.overlay{
+
+  position: absolute;
+  top: 0;
+}
+
+.container{
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+} 
+.access-quiz-form {
+  
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.1);
+  padding: 0px; 
+  width: 400px;
+  height: 235px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0px;
+
+  
+};
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notes{
+  color: gray;
+  font-size: 1rem;
+  margin-bottom: .25rem;
+}
+.input-wrapper{
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+  
+}
+.input-container{
+  margin-top: 200px;
+  background-color: aliceblue;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  color: gray; 
+
+}
+.access-heading{
+  margin-top: 20px;
+  
+  font-weight: 900;
+}
+.continue-button{
+  width: 90%;
+  height: 30px;
+  margin-left: 20px;
+  background-color: #50bcbc;
+}
+span{
+  color: #1e9595;
+}
+.first-button{
+  width: 90px;
+  height: 40px;
+}

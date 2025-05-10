@@ -1,0 +1,15 @@
+.main_frame{
+    background-color: aqua;
+    height: 200px;
+    width: 1010px;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+  }
+  .logo{
+    height: 50px;
+    width: 120px;
+  }
+  

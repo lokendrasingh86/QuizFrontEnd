@@ -1,0 +1,28 @@
+.first{
+    padding:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+}
+.details{
+    height: 40vh;
+}
+.points{
+    padding: 6px;
+}
+.timer{
+    margin-left: 65vh;
+    background-color: rgb(246, 179, 10);
+    width:70px;
+    height: 35px;
+}
+.waiting-timer{
+    display: flex;
+    flex-direction: row;
+}
+.buttons{
+    height: 50px;
+    width: 70px;
+}
