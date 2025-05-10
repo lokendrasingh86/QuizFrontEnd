@@ -83,9 +83,12 @@ export const Duration = () => {
                     <h4>Quiz Duration: <span>{quizduration}</span></h4>
                 </div>
                 <div className='waiting-timer'>
+
                     <h2 className='timer'>{timeLeft != null ? formatTime(timeLeft) : "Loading.."}  
                     </h2>
-                    <h2 className='buttons'>{timeLeft===0 && <button onClick={handleClick}>:-Start Over</button> }</h2>
+                    <h2 >{timeLeft===0 && <button className='buttons'onClick={handleClick}>Start Quiz</button> }
+                    </h2>
+
                 </div>
             </div>
   )

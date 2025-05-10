@@ -14,15 +14,21 @@
 }
 .timer{
     margin-left: 65vh;
-    background-color: rgb(246, 179, 10);
-    width:70px;
-    height: 35px;
+    background-color: rgb(220, 196, 134);
+    height: 29px;
 }
 .waiting-timer{
+
+    margin-left: 27vh;
     display: flex;
     flex-direction: row;
 }
 .buttons{
-    height: 50px;
+    margin-left: 20px;
+    height: 35px;
     width: 70px;
+    transition: 0.3s;
+}
+.buttons:hover{
+    background-color: aquamarine;
 }

@@ -1,7 +1,8 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState,useContext } from 'react';
 import { RemainingTime } from './RemainingTime';
 import "./QuestionPage.css"
+import { QuizContext } from './QuizContext';
 
 export const QuestionPage = () => {
   const [ques,setques] = useState([
@@ -58,12 +59,13 @@ export const QuestionPage = () => {
       ]
     }
     ]);
-
+    const quiz = useContext(QuizContext);
       
       const [currentIndex,setCurrentIndex]=useState(0);
       const handleNext=()=>{
         if(currentIndex < ques[0].questions.length -1){
-          setCurrentIndex(currentIndex+1)
+          setCurrentIndex(currentIndex+1);
+          
         }
       }
       const handleBack=()=>{
@@ -82,12 +84,14 @@ export const QuestionPage = () => {
   return (
     <div className='quiz-container'>
       <div className='top'>
-      <h2>Question:{currentIndex+1}</h2>
-      <RemainingTime></RemainingTime>
+      <h2 style={{marginLeft:'10px'}}>Question:{currentIndex+1}</h2>
+      <div style={{marginRight:'20px',backgroundColor:'rgb(249, 167, 80)'}}>
+      <RemainingTime ></RemainingTime>
+      </div>
       </div>
 
       <div className='ques'>
-      <div style={{margin:'10px'}}>
+      <div style={{marginTop:'30px',marginRight:'5px'}}>
         Q{currentIndex+1}
       </div>
       <div className='ques-box'>
