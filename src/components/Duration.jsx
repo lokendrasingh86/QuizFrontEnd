@@ -1,38 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./Duration.css";
 import { useState,useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { QuizContext } from './QuizContext';
 
 export const Duration = () => {
 
-  const quiz = {
-    loginTime: {
-      label: 'Login Time',
-      id: '2025-05-02T00:18:00+05:30'
-    },
-    startTime: {
-      label: 'Start Time',
-      id: '2025-05-02T00:23:00+05:30'
-    },
-    endTime: {
-      label: 'End Time',
-      id: '2025-05-02T00:23:00+05:30'
-    },
-    questions: [
-      {
-        id: 1,
-        question: 'What is the capital of France?',
-        options: ['Paris', 'Berlin', 'Madrid', 'Rome'],
-        answer: 'Paris'
-      },
-      {
-        id: 2,
-        question: '2 + 2 = ?',
-        options: ['3', '4', '5', '6'],
-        answer: '4'
-      }
-    ]
-  };
+  const quiz = useContext(QuizContext);
 
 
   const [timeLeft,setTimeLeft]=useState(null);
@@ -62,8 +36,8 @@ export const Duration = () => {
   };
 
     var details="BCS-401/Cs/C";
-    var Question=2;
-    var Marks = 10;
+    var Question=quiz.questions.length;
+    var Marks = Question*2;
     var quizduration= "10 Mins";
 
 
